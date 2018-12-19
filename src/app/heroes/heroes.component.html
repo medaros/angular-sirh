@@ -1,0 +1,41 @@
+<h2>Les informations de {{ hero.name | uppercase}} :</h2>
+<span>Id : {{ hero.id }}</span><br>
+<span>Name : {{ hero.name }}</span><br>
+<span>Age : {{ hero.age }}</span><br>
+<span>Post : {{ hero.currentPosition }}</span>
+<br>
+
+<div>
+  <label for="">name:
+    <input [(ngModel)]="hero.name" placeholder="name">
+  </label><br>
+  <label for="">age:
+    <input [(ngModel)]="hero.age" placeholder="age">
+  </label><br>
+  <label for="">post:
+    <select [(ngModel)]="hero.currentPosition">
+      <option value="Developer">Developer</option>
+      <option value="Engineer">Engineer</option>
+      <option value="C.T.O">C.T.O</option>
+    </select>
+  </label>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+  <h2>La liste des collaborateurs : </h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">
+          {{hero.id}} -
+        </span>
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+
+  <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+</div>

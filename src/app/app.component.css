@@ -1,0 +1,43 @@
+nav {
+    margin:30px;
+}
+
+nav a  {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px; 
+    background:orange;
+    transition: .4s;
+    border: 5px solid #fff;
+    box-shadow: 0 0 2px #444;
+}
+
+nav a:hover {
+    box-shadow: 0 0 5px #444;
+}
+
+h1 {
+    color: #193;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    margin:0;
+    padding: 10px 0;
+    border-bottom: 1px solid #193;
+    box-shadow: 0 1px 0px 0 #193;
+}
+
+h2,h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body, input[type="text"], button {
+    color: #888;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

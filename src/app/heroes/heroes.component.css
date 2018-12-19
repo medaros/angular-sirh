@@ -1,0 +1,20 @@
+
+li {
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+.badge {
+    font-size: 12px;
+    background: #169;
+    margin-right: 10px;
+    padding: 10px 5px;
+    border-radius: 3px;
+    color: #fff;
+}
